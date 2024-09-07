@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30"
+            Spacing="50">
+       
+
+            <Label
+                Text="ROLADOR DE DADOS"
+                FontSize="Header"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+         />
+            <Label
+                x:Name="NumeroSorteado"
+                Text="4"
+                HorizontalTextAlignment="Center"
+                FontSize="Header"
+                
+               />
+
+
+
+            
+
+            <Picker
+            
+                Title="Slecione o numero"
+                x:Name="PickerNumeros"
+                HorizontalOptions="Center">
+
+
+
+                <Picker.Items>
+                <x:String>4</x:String>
+                 <x:String>6</x:String>
+                 <x:String>8</x:String>
+                 <x:String>10</x:String>
+                 <x:String>12</x:String>
+                 <x:String>16</x:String>
+                 <x:String>20</x:String>
+                 <x:String>26</x:String>
+                 <x:String>30</x:String>
+                 </Picker.Items>
+
+            </Picker>
+
+            <Button
+                x:Name="botao"
+                Text="Rolar o Dado"
+                FontSize="Medium"
+                BackgroundColor="Grey"
+                Clicked="botao_Clicked"
+                
+                />
+                
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
